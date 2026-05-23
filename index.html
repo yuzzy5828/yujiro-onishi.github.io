@@ -67,30 +67,24 @@
             </tr>
             <tr onmouseout="paper1_stop()" onmouseover="paper1_start()">
               <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one" style="position:relative; width:100%; max-width:180px; margin: 0 auto;">
-                
-                <div class="two" id='paper1_image' style="position:absolute; top:0; left:0; width:100%; height:100%;">
-                  <video style="width:100%; height:100%; aspect-ratio:16/9; object-fit:cover; border-radius:8px;" muted autoplay loop playsinline>
-                    <source src="images/[動画ファイル名].mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                  </video>
+                <div class="one">
+                  <div class="two" id='paper1_image'><video width=100% height=100% muted autoplay loop>
+                  <source src="images/[動画ファイル名].mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                  </video></div>
+                  <img src='images/rope_bottleneck_example1.JPG' style="width:100%; max-width:360px;" alt="paper image">
                 </div>
-                
-                <img src='images/rope_bottleneck_example1.JPG' style="width:100%; height:100%; aspect-ratio:16/9; object-fit:cover; display:block;" alt="paper image">
-                
-              </div>
-              
-              <script type="text/javascript">
-                function paper1_start() {
-                  document.getElementById('paper1_image').style.opacity = "1";
-                }
+                <script type="text/javascript">
+                  function paper1_start() {
+                    document.getElementById('paper1_image').style.opacity = "1";
+                  }
 
-                function paper1_stop() {
-                  document.getElementById('paper1_image').style.opacity = "0";
-                }
-                paper1_stop()
-              </script>
-            </td>
+                  function paper1_stop() {
+                    document.getElementById('paper1_image').style.opacity = "0";
+                  }
+                  paper1_stop()
+                </script>
+              </td>
               
               <td style="padding:20px;width:75%;vertical-align:middle">
                 <a href="https://arxiv.org/abs/2603.13756">
